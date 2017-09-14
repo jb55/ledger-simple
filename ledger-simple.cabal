@@ -1,0 +1,23 @@
+name:                ledger-simple
+version:             0.1
+synopsis:            Quickly render ledger-cli documents
+description:         Quickly render ledger-cli documents
+homepage:            https://github.com/jb55/ledger-simple
+license:             MIT
+license-file:        LICENSE
+author:              William Casarin
+maintainer:          jb55@jb55.com
+category:            Text
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:   Text.Ledger.Simple
+
+  hs-source-dirs:    src
+  build-depends: base >= 4.9 && <4.10,
+               , time >= 1.6
+               , formatting
+
+  default-language:    Haskell2010
