@@ -16,8 +16,18 @@ library
   exposed-modules:   Text.Ledger.Simple
 
   hs-source-dirs:    src
-  build-depends: base >= 4.9 && <4.10,
+  build-depends: base >= 4.9 && <4.10
                , time >= 1.6
+               , text
+               , semigroupoids
                , formatting
 
   default-language:    Haskell2010
+
+
+test-suite simple-test
+  type:       exitcode-stdio-1.0
+  main-is:    test/simple-test.hs
+  build-depends: base
+               , ledger-simple
+               , time
